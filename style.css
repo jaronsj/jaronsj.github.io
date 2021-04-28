@@ -25,11 +25,11 @@ main {
     padding: 0 15px;
 }
 
-main h2{
+main h2 {
     border-bottom: 1px solid black;
 }
 
-.profile{
+.profile {
     float:right;
     box-shadow: 0 0 17px black;
     max-width: 200px;
@@ -39,18 +39,18 @@ main h2{
 footer a, footer a:link, footer a:visited,  footer a:hover, footer a:active, footer a:focus{
     color: white;
 }
-footer a:hover{
+footer a:hover {
     color: #ddd;
 }
-footer{
+footer {
     clear:both;
     text-align: center;
 }
-footer p.legal{
+footer p.legal {
     margin-bottom: 9px;
     font-size: .9em;
 }
-footer p.highlight{
+footer p.highlight {
     color: yellow;
     font-size: .8em;
     margin-top: 0;

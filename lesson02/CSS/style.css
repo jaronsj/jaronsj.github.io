@@ -1,8 +1,62 @@
 body{
-    background-color: yellow;
+    background-color: lightgray;
+    margin: 30px;
 }
 
 main{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1{
+    font-family: 'Original Surfer', cursive;
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+h2, h3{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+img{
+    max-width: 200px;
+}
+
+#Apple{
+    background-color: yellow;
+    border-style: solid;
+    padding: 10px;
+}
+.apple_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Church{
+    background-color: lightblue;
+    border-style: solid;
+    padding: 10px;
+}
+.church_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Youtube{
+    background-color: lightgreen;
+    border-style: solid;
+    padding: 10px;
+}
+.youtube_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,0 +1,6 @@
+@media (min-width: 32.5em){
+    .profile {
+        float:right;
+        box-shadow: 0 0 17px black;
+    }
+}

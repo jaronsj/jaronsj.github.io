@@ -31,8 +31,6 @@ main h2 {
 }
 
 .profile {
-    float:right;
-    box-shadow: 0 0 17px black;
     max-width: 200px;
     max-height: 200px;
 }

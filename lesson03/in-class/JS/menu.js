@@ -7,3 +7,4 @@ window.addEventListener('load', () => {
     // To solve the mid resixing issure with responsive class on
     //window.onresize= () => {if (window.innerWidth>760) mainnav.classList.remove('responsive')};
 });
+

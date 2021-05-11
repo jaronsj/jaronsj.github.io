@@ -11,6 +11,14 @@
         display: grid ;
         grid-template-columns: repeat(3,auto);
     }
+    .delta_img{
+        grid-column: 1/2;
+    }
+    .header_par1{
+        display: grid;
+        grid-column: 1/2;
+        background-color: gray;
+    }
 
     .row1{ 
         grid-row: 2/3;

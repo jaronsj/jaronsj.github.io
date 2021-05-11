@@ -6,10 +6,11 @@
     }
 
     header{
-        grid-row: 1/2;
-        grid-column: 1/4;
         display: grid ;
         grid-template-columns: repeat(3,auto);
+        grid-row: 1/2;
+        grid-column: 1/4;
+        
     }
     .delta_img{
         grid-column: 1/2;

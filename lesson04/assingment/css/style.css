@@ -1,12 +1,31 @@
 /* small/phone view *********/
 body{
     background-color: white;
+    margin: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Itim', cursive;
+}
+
+header{
+    background-color: #C78543;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#websiteName{
+    grid-column: 2/3;
+    margin: auto auto;
 }
 
 nav{
     margin: 0 auto;
     max-width: 360px;
-    background-color: #12aaeb;
+    background-color: #A3D4F5;
 }
 #navigation{
     list-style: none;
@@ -25,7 +44,8 @@ nav{
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: #FCDF5F;
+    text-decoration: black;
     font-weight: 700;
 }
 #navigation a:hover, #navigation a.active:hover{
@@ -39,6 +59,25 @@ nav{
 }
 #navigation.responsive li{
     display: block;
+}
+
+.contentbox{
+    display: block;
+    margin: 0px auto;
+    border: dashed black;
+    padding: 15px;
+    background-color: lightgray;
+    color: black;
+    font-style: italic;
+}
+#logo{
+    max-width: 100px;
+    grid-column: 1/2;
+    margin: auto auto;
+}
+footer{
+    background-color: #C78543;
+    padding: 5px;
 }
 
 @media only screen and (min-width: 34.5em) {
@@ -57,11 +96,20 @@ nav{
     #navigation li:first-child {
         display: none;
     }
+    #logo{
+        max-width: 200px;
+    }
 }
 
 @media only screen and (min-width: 54.5em){
     #navigation{
         width: 800px;
         margin: 16px auto;
+    }
+    #logo{
+        max-width: 100%;
+    }
+    #websiteName{
+        font-size: 50px;
     }
 }

@@ -1,0 +1,140 @@
+/* small/phone view *********/
+body{
+    background-color: white;
+    margin: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+    font-family: 'Itim', cursive;
+}
+
+header{
+    background-color: #C78543;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#pancakeImg{
+    display: grid;
+    grid-column: 1/2;
+    max-width: 150px;
+}
+
+#pancake{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: #FCDF5F;
+    font-family: 'Itim', cursive;
+    max-height: 300px;
+    border: solid;
+    border-radius: 15px;
+    
+}
+#pancake p{
+    display: grid;
+    grid-column: 2/3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#websiteName{
+    grid-column: 2/3;
+    margin: auto auto;
+}
+
+nav{
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #A3D4F5;
+}
+#navigation{
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+#navigation li:first-child{
+    display: block;
+}
+#navigation li{
+    display: none;
+}
+#navigation a{
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #FCDF5F;
+    text-decoration: black;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover{
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color:white;
+    /* border-bottom: 5px solid black; */
+}
+#navigation.responsive li{
+    display: block;
+}
+
+.contentbox{
+    display: block;
+    margin: 0px auto;
+    border: dashed black;
+    padding: 15px;
+    background-color: lightgray;
+    color: black;
+    font-style: italic;
+}
+#logo{
+    max-width: 100px;
+    grid-column: 1/2;
+    margin: auto auto;
+}
+footer{
+    background-color: #C78543;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 34.5em) {
+    nav{
+        max-width: 100%;
+    }
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+    #navigation li{
+        display: block;  /* change state in small view*/
+    }
+    #navigation a {
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+    #logo{
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 54.5em){
+    #navigation{
+        width: 800px;
+        margin: 16px auto;
+    }
+    #logo{
+        max-width: 100%;
+    }
+    #websiteName{
+        font-size: 50px;
+    }
+}

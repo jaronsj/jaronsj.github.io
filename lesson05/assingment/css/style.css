@@ -16,17 +16,12 @@ header{
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-#pancakeImg{
-    display: grid;
-    grid-column: 1/2;
-    max-width: 150px;
+    font-size: 10px;
 }
 
 #pancake{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 30% 1fr;
     background-color: #FCDF5F;
     font-family: 'Itim', cursive;
     max-height: 300px;
@@ -39,7 +34,13 @@ header{
     grid-column: 2/3;
     text-align: center;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 10px;
+}
+#pancakeImg{
+    display: grid;
+    grid-column: 1/2;
+    max-width: 75%;
+    justify-self: center;
 }
 
 #websiteName{
@@ -124,6 +125,12 @@ footer{
     #logo{
         max-width: 200px;
     }
+    header{
+        font-size: 1em;
+    }
+    #pancake p{
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 54.5em){
@@ -136,5 +143,8 @@ footer{
     }
     #websiteName{
         font-size: 50px;
+    }
+    #pancake p{
+        font-size: 2em;
     }
 }

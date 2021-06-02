@@ -23,12 +23,17 @@ window.addEventListener("load", (event)=>{
     month[7]= 'August';
     month[8]= 'September';
     month[9]= 'October';
-    month[10]= 'November';/*String(today.getMonth() + 1).padStart(2, '0'); //January is 0!*/
+    month[10]= 'November';
     month[11]= 'December';
     var mm= month[today.getMonth()];
     var yyyy = today.getFullYear();
     today = n +', '+dd + ' '+ mm + ' ' + yyyy;
     lu.textContent = today;
+
+    if (weekday !=="Friday") {
+        document.getElementById('pancake').style.display= 'none';
+    }
+
 
     const cry= document.querySelector("#copyrightyear");
     cry.textContent= new Date().getFullYear();

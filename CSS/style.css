@@ -15,6 +15,9 @@ header, footer{
     border-radius: 15px;
 }
 
+img{
+    max-width: 200px;
+}
 
 header h1{
     font-size: 32px;

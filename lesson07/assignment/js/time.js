@@ -30,7 +30,7 @@ window.addEventListener("load", (event)=>{
     today = n +', '+dd + ' '+ mm + ' ' + yyyy;
     lu.textContent = today;
 
-    if (weekday[today.getDay()] !=="Friday") {
+    if (n !=="Friday") {
         document.getElementById('pancake').style.display= 'none';
     }
 

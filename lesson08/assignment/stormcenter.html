@@ -10,7 +10,7 @@
     <script src='js/time.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap" rel="stylesheet">
-    <title>Preston || Camper's Perfect Weather</title>
+    <title>Storm Center || Camper's Perfect Weather</title>
     
     
 </head>
@@ -38,6 +38,72 @@
         <p>Saturday= Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
     
+    <main>
+        <h1 class="title-center">Report a Storm</h1>
+        <form method="GET" action="./thanks.html" class="report-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullName">Full Name*
+                    <input type="text" name="fullName" id="fullName" placeholder="Johnny Appleseed" pattern="[A-Za-z]{5}*" required>
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" id="email" placeholder="user@email.com" minlength="3" maxlength="64" required>
+                </label>
+                <label for="phone">Phone Number*
+                    <input type="tel" name="phone" id="phone" placeholder="###-###-####" required>
+                </label>
+                <label for="zipCode">Zipcode*
+                    <input type="number" name="zipCode" id="zipCode" placeholder="#####" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label for="stormdate">Today's Date
+                    <input type="date" name="stormdate" id="stormdate" value="2020-06-11" min="2020-01-01" max="2100-01-01">
+                </label>
+                <label for="storm">Storm Type
+                    <input type="text" list="storms" name="storm" id="storm">
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label for="storming">Storm Severity
+                    <input type="range" name="storming" id="storming" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label> 
+                <span id="ratingvalue">1</span>
+                <label for="stormRegion">Storm Region
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="Preston"> Preston </option>
+                        <option value="Soda Springs"> Soda Springs </option>
+                        <option value="Fish Haven"> Fish Haven </option>
+                    </select> 
+                </label>
+            </fieldset>
+            <fieldset >
+                <legend>Additional Information</legend>
+                <p>In Danger Level</p>
+                <label for="inDangerLevel">
+                    <input type="radio" id="inDangerLevel" name="dangerLevel" value="Yes"> Yes
+                </label>
+                <label for="inDangerLevel2">
+                    <input type="radio" id="inDangerLevel2" name="dangerLevel" value="No"> No
+                </label>
+                <label for="inDangerLevel3">
+                    <input type="radio" id="inDangerLevel3" name="dangerLevel" value="Maybe"> Maybe
+                </label> 
+                <br>
+                <label for="comments"> Please share any additional information:
+                    <textarea id="comments" name="comment" rows="4" cols="50"></textarea>
+                </label>
+                <input class="btn btn-primary" type="submit" value="Report A Storm">
+            </fieldset>
+        </form>
+    </main>
     
     <footer>
         <p class="legal"> &copy; <span id="copyrightyear"></span> | Jaron Jensen | Wyoming | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>

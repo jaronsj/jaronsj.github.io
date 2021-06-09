@@ -5,7 +5,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
 h1{
     font-family: 'Itim', cursive;
 }
@@ -99,6 +98,84 @@ nav{
     right: 50px;
     color: red;
 }
+
+.report-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+.report-form fieldset {
+    display: flex;
+    border: dashed 2px;
+    margin-bottom: 2rem;
+}
+
+
+table {
+    display: table;
+}
+
+td, th{
+    width: 150px;
+    border: 2px dashed white;
+}
+.container-table {
+    margin-top: 1rem;
+}
+
+.title-center {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+input[type="text"], 
+input[type="date"], 
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    padding: 5px 15px 2px;
+    border: 2px solid #000;
+    background-color: #fff;
+    line-height: 2;
+    box-shadow: none;
+    max-width: 100%;
+    outline: none;
+}
+input[type="range"]{
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    min-width: 100px;
+    margin: 0;
+    padding: 5px 20px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    text-decoration: none;
+    max-height: 2.25rem;
+    font-size: 1.15rem;
+    box-shadow: 4px 4px 0 0 #000;
+}
+
+.btn-primary {
+    background-color: #167973;
+    color: #fff;
+}
+
 #screen-small{
     display: inline-block;
     font-size: 1em;

@@ -110,7 +110,7 @@ nav{
 
 .report-form fieldset {
     display: flex;
-    border: dashed 2px;
+    border: solid 2px;
     margin-bottom: 2rem;
 }
 
@@ -172,8 +172,12 @@ input[type="range"]{
 }
 
 .btn-primary {
-    background-color: #167973;
-    color: #fff;
+    background-color: #A3D4F5;
+    color: #FCDF5F;
+}
+
+.btn-primary:hover{
+    background-color: darkblue;
 }
 
 #screen-small{

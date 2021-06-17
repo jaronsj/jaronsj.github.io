@@ -91,13 +91,6 @@ nav{
 .banner-hero img{
     width: 100%;
 }
-.changing-text{
-    position: absolute;
-    margin-left: 35px;
-    top: 20px;
-    right: 50px;
-    color: red;
-}
 
 .report-form{
     display: flex;
@@ -208,6 +201,32 @@ input[type="range"]{
     line-height: .5;
 }
 
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.towns article {
+    max-width: 320px;
+    border: dashed white 2px;
+    margin: auto;
+}
+
+.towns article img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.main-story {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
 
 .contentbox{
     display: block;
@@ -260,14 +279,27 @@ footer{
         line-height: 1;
         max-height: 100%;
     }
-    #screen-small{
-        display: none;
+   
+    .towns article {
+        max-width: unset;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
     }
-    #screen-medium{
-        display: inline-block;
+
+    .towns article div{
+        text-align: left;
     }
-    #screen-large{
-        display: none;
+
+    .main-story {
+        flex-direction: row;
+        align-items: unset;
+        text-align: unset;
+    }
+    
+    .story-content {
+        padding-left: 2rem;
     }
 }
 
@@ -285,13 +317,29 @@ footer{
     #pancake p{
         font-size: 2em;
     }
-    #screen-small{
-        display: none;
+   
+    .towns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        max-width: 1100px;
+        margin: auto;
     }
-    #screen-medium{
-        display: none;
+
+    .towns article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
-    #screen-large{
-        display: inline-block;
+
+    .main-story {
+        flex-direction: row;
+        align-items: unset;
+        text-align: unset;
+    }
+    
+    .story-content {
+        padding-left: 2rem;
     }
 }

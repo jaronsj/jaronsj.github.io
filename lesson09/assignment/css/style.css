@@ -173,21 +173,6 @@ input[type="range"]{
     background-color: darkblue;
 }
 
-#screen-small{
-    display: inline-block;
-    font-size: 1em;
-    font-style: italic;
-}
-#screen-medium{
-    display: none;
-    font-size: 2em;
-    font-style: italic;
-}
-#screen-large{
-    display: none;
-    font-size: 3em;
-    font-style: italic;
-}
 .weather-summary {
     position: absolute;
     margin-right: 35px;

@@ -192,7 +192,9 @@ input[type="range"]{
     grid-gap: 20px;
     text-align: center;
 }
-
+.towns img{
+    width: 80%;
+}
 .towns article {
     max-width: 320px;
     border: dashed black 2px;
@@ -317,8 +319,7 @@ footer{
     }
 
     .towns article{
-        display: flex;
-        flex-direction: column;
+        display: grid;
         justify-content: space-between;
         height: 100%;
     }

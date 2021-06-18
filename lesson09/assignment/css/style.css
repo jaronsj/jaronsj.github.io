@@ -273,6 +273,11 @@ footer{
         padding: 0 2rem;
     }
 
+    
+    .towns div:nth-child(odd) article{
+        flex-direction: row-reverse;
+    }
+
     .towns article div{
         text-align: left;
     }

@@ -195,7 +195,7 @@ input[type="range"]{
 
 .towns article {
     max-width: 320px;
-    border: dashed white 2px;
+    border: dashed black 2px;
     margin: auto;
 }
 

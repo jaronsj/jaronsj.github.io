@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/navresponse.js'></script>
+    <script src='js/time.js'></script>
+    <script src='js/windchill.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap" rel="stylesheet">
+    <title>Preston || Camper's Perfect Weather</title>
+    
+    
+</head>
+<body>
+    
+    <header>
+        <img id='logo' src="images/tent_logo.png" alt="Website Logo">
+        <h1 id='websiteName'>Camper's Perfect Weather</h1>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="/lesson10/assignment/index.html">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson10/assignment/pages/storm-center/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson10/assignment/pages/gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div id='pancake'>
+        <img id='pancakeImg' src="images/pancake.png" alt="Image of Pancakes">
+        <p>Saturday= Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    
+    <h2>Preston Idaho</h2>
+    <div class='banner-hero'>
+        <section class='weather-summary'>
+            <p>Currently: Rainy</p>
+            <p>Temperature: <span id='temp'>54</span>°F</p>
+            <p>Wind Speed: <span id='wind'>12</span> mph</p>
+            <p>Wind Chill: <span id='wind_chill'></span>°F</p>
+            <p>Humidity: 95%</p>
+        </section>
+        
+        <picture>
+            <source srcset="images/hero.jpeg" media="(max-width: 500px)">
+            <source srcset="images/hero.jpeg" media="(max-width: 950px">
+            <img src='images/hero.jpeg' alt="Franklin Landscape">
+        </picture>
+        
+    </div>
+    <div class="contentbox forecast">
+        <p>5 day forecast</p>
+    </div>
+    <div class="contentbox">
+        <p>Article</p>
+    </div>
+    <div class="contentbox">
+        <p>Contact Information</p>
+    </div>
+
+    <footer>
+        <p class="legal"> &copy; <span id="copyrightyear"></span> | Jaron Jensen | Wyoming | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="highlight">Date: <span id="date"></span></p>
+    </footer>
+</body>
+</html>

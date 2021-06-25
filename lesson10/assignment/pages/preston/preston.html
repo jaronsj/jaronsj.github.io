@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src='js/navresponse.js'></script>
     <script src='js/time.js'></script>
+    <script src="js/forecast.js"></script>
     <script src='js/windchill.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap" rel="stylesheet">
@@ -41,12 +42,13 @@
     
     <h2>Preston Idaho</h2>
     <div class='banner-hero'>
-        <section class='weather-summary'>
-            <p>Currently: Rainy</p>
-            <p>Temperature: <span id='temp'>54</span>°F</p>
-            <p>Wind Speed: <span id='wind'>12</span> mph</p>
-            <p>Wind Chill: <span id='wind_chill'></span>°F</p>
-            <p>Humidity: 95%</p>
+        <section class="weather-summary">
+            <h3>Weather Summary</h3>
+            <p>Current: <span id="currentTemp"></span>°F</p>
+            <p>High: <span id="highTemp"></span>°F</p>
+            <p>Windchill: <span id="windChill"></span>°F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windSpeed"></span> mph</p>
         </section>
         
         <picture>
@@ -56,9 +58,27 @@
         </picture>
         
     </div>
-    <div class="contentbox forecast">
-        <p>5 day forecast</p>
-    </div>
+    <h3 class="content-auto">5 Day Forecast</h3>
+        <div class="content-auto flex-center">
+          <table id="forecast">
+            <tbody>
+              <tr>
+                <th id="weekday1"></th>
+                <th id="weekday2"></th>
+                <th id="weekday3"></th>
+                <th id="weekday4"></th>
+                <th id="weekday5"></th>
+              </tr>
+              <tr>
+                <td><img id="icon1" width="60" height="60"><span id="day1"></span></td>
+                <td><img id="icon2" width="60" height="60"><span id="day2"></span></td>
+                <td><img id="icon3" width="60" height="60"><span id="day3"></span></td>
+                <td><img id="icon4" width="60" height="60"><span id="day4"></span></td>
+                <td><img id="icon5" width="60" height="60"><span id="day5"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     <div class="contentbox">
         <p>Article</p>
     </div>

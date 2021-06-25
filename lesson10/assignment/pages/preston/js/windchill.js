@@ -8,13 +8,13 @@ window.addEventListener('load', () => {
         ,):
             "N/A";
     }
-
+    
     const displayWindChill = () => {
-        let temperature = Number(document.getElementById("temp").textContent || 0);
-        let wind = Number(document.getElementById("wind").textContent || 0);
+        let temperature = parseFloat(document.getElementById("currentTemp").textContent);
+        let wind = parseFloat(document.getElementById("windSpeed").textContent);
         let result = calWindChill(temperature, wind);
-        document.getElementById("wind_chill").innerHTML = result;
+        document.getElementById("windChill").innerHTML = result;
     }
-
+    
     displayWindChill();
 })

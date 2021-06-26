@@ -1,5 +1,5 @@
 window.addEventListener('load', () =>{
-    const weatherURL = 'https:/api.openweathermap.org/data/2.5/weather?zip=83263,us&appid=bc0f5b4b03b1172429a1ac3fd29e6dcc&units=imperial';
+    const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?zip=83263,us&appid=bc0f5b4b03b1172429a1ac3fd29e6dcc&units=imperial';
     fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -12,7 +12,7 @@ window.addEventListener('load', () =>{
         document.getElementById('windSpeed').textContent = jsObject.wind.speed;
     });
 
-    const forecastURL = 'https:/api.openweathermap.org/data/2.5/forecast?zip=83263,us&appid=bc0f5b4b03b1172429a1ac3fd29e6dcc&units=imperial';
+    const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83263,us&appid=bc0f5b4b03b1172429a1ac3fd29e6dcc&units=imperial';
         fetch(forecastURL)
         .then((response) => response.json())
         .then((jsObject) => {

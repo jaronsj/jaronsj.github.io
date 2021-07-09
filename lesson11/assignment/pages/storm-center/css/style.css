@@ -1,8 +1,14 @@
 /* small/phone view *********/
 body{
-    background-color: white;
+    background-color: lightgray;
     margin: 2em;
     font-family: 'Roboto', sans-serif;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -72,6 +78,7 @@ nav{
     color: #FCDF5F;
     text-decoration: black;
     font-weight: 700;
+    font-size: 20px;
 }
 #navigation a:hover, #navigation a.active:hover{
     color: white;
@@ -290,6 +297,11 @@ footer{
     }
     #screen-medium{
         display: none;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px
     }
     #screen-large{
         display: inline-block;

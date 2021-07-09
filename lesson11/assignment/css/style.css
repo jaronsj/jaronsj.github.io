@@ -1,10 +1,21 @@
 /* small/phone view *********/
 body{
-    background-color: white;
+    background-color: lightgray;
     margin: 2em;
     font-family: 'Roboto', sans-serif;
 }
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 
+#main_img{
+    /* margin-left: 30px; */
+    align-self: center;
+    max-width: 100%;
+}
 h1{
     font-family: 'Itim', cursive;
 }
@@ -72,6 +83,7 @@ nav{
     color: #FCDF5F;
     text-decoration: black;
     font-weight: 700;
+    font-size: 20px;
 }
 #navigation a:hover, #navigation a.active:hover{
     color: white;
@@ -173,6 +185,16 @@ input[type="range"]{
     background-color: darkblue;
 }
 
+#index_head{
+    justify-content: center;
+    text-align: center;
+}
+#index_par{
+    justify-content: center;
+    text-align: center;
+    padding-right: 30px;
+    line-height: 30px;
+}
 .weather-summary {
     position: absolute;
     margin-right: 35px;
@@ -194,6 +216,7 @@ input[type="range"]{
 }
 .towns img{
     width: 80%;
+    object-fit: cover;
 }
 .towns article {
     max-width: 320px;
@@ -232,6 +255,10 @@ input[type="range"]{
 footer{
     background-color: #C78543;
     padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 34.5em) {
@@ -332,5 +359,15 @@ footer{
     
     .story-content {
         padding-left: 2rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px
+    }
+    #main_img {
+        max-width: 400px;
+        margin-left: 30px;
+        margin-top: 25px;
     }
 }

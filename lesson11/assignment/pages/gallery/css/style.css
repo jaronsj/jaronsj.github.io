@@ -1,10 +1,16 @@
 /* small/phone view *********/
 body{
-    background-color: white;
+    background-color: lightgray;
     margin: 2em;
     font-family: 'Roboto', sans-serif;
 }
 
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 
 h1{
     font-family: 'Itim', cursive;
@@ -73,6 +79,7 @@ nav{
     color: #FCDF5F;
     text-decoration: black;
     font-weight: 700;
+    font-size: 20px;
 }
 #navigation a:hover, #navigation a.active:hover{
     color: white;
@@ -146,6 +153,7 @@ nav{
 footer{
     background-color: #C78543;
     padding: 5px;
+    
 }
 
 @media only screen and (min-width: 34.5em) {
@@ -192,6 +200,11 @@ footer{
     .grid-gallery-container figcaption {
         display: block;
     } 
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px
+    }
 
     figure:hover{
         box-shadow: 5px 5px 5px 5px gray;

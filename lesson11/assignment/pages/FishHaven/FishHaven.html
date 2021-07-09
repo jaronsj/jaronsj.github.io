@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/navresponse.js'></script>
+    <script src='js/time.js'></script>
+    <script src="js/forecast.js"></script>
+    <script src='js/windchill.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap" rel="stylesheet">
+    <title>Preston || Camper's Perfect Weather</title>
+    
+    
+</head>
+<body>
+    <main>
+        <header>
+            <img id='logo' src="images/tent_logo.png" alt="Website Logo">
+            <h1 id='websiteName'>Camper's Perfect Weather</h1>
+        </header>
+
+        <nav>
+            <ul id="navigation">
+                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="/lesson11/assignment/index.html">Home</a></li>
+                <li><a href="/lesson11/assignment/pages/preston/preston.html">Preston</a></li>
+                <li><a href="/lesson11/assignment/pages/SodaSprings/SodaSprings.html">Soda Springs</a></li>
+                <li><a class='active' href="#">Fish Haven</a></li>
+                <li><a href="/lesson11/assignment/pages/storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson11/assignment/pages/gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <div id='pancake'>
+            <img id='pancakeImg' src="images/pancake.png" alt="Image of Pancakes">
+            <p>Saturday= Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        
+        <!-- <h2>Preston Idaho</h2> -->
+        <div class='banner-hero'>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Current: <span id="currentTemp"></span>°F</p>
+                <p>High: <span id="highTemp"></span>°F</p>
+                <p>Windchill: <span id="windChill"></span>°F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </section>
+            
+            <picture>
+                <source srcset="images/hero.jpeg" media="(max-width: 500px)">
+                <source srcset="images/hero.jpeg" media="(max-width: 950px">
+                <img src='images/hero_1_800x350.jpg' alt="Franklin Landscape">
+            </picture>
+            
+        </div>
+        <h3 class="content-auto">5 Day Forecast</h3>
+            <div class="content-auto flex-center">
+            <table id="forecast">
+                <tbody>
+                <tr>
+                    <th id="weekday1"></th>
+                    <th id="weekday2"></th>
+                    <th id="weekday3"></th>
+                    <th id="weekday4"></th>
+                    <th id="weekday5"></th>
+                </tr>
+                <tr>
+                    <td><img id="icon1" width="60" height="60"><span id="day1"></span></td>
+                    <td><img id="icon2" width="60" height="60"><span id="day2"></span></td>
+                    <td><img id="icon3" width="60" height="60"><span id="day3"></span></td>
+                    <td><img id="icon4" width="60" height="60"><span id="day4"></span></td>
+                    <td><img id="icon5" width="60" height="60"><span id="day5"></span></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        <article class="card content-auto">
+            <h2>Idaho Days Return in Grand Fashion:</h2>
+            <div class="card-content">
+                <p>“Spectacular! Historical! Practically perfect in every way!”
+
+                    Those are some of the sentiments heard regarding Idaho Days 2021, which was immensely enjoyed by the 
+                    crows who gathered in Franklin for the traditional celebration. From beginning to end, chairman Nicole Nielson 
+                    packed in the festivities delighting young and old with down-home Franklin hospitality and entertainment Thursday 
+                    through Saturday, June 24-26. ...
+                </p>                
+                <img src="images/article.image.jpg" alt="kids playing"/>
+                <li><a href="https://www.hjnews.com/preston/idaho-days-returns-in-grand-fashion/article_1c63b0ed-b9e5-5558-a824-220deba6953e.html">Continue Reading...</a></li>
+
+            </div>
+        </article>
+        <div class="contact-info content-auto">
+            <div class="col-2">
+            <p>Camper's Perfect Weather<br>
+                700 Weather Way<br>
+                Preston, ID 83263
+            </p>
+            <p>☎ 123.456.7789<br>
+                <a href="#" target="_blank" rel="nofollow">campersperfectweather@weather.info</a>
+            </p>
+            <a class="social-link" rel="nofollow" target="_blank" href="https://www.facebook.com"> <img class="icon" src="images/facebook-icon.svg" alt="Facebook logo"></a>
+            <a class="social-link" rel="nofollow" target="_blank" href="https://www.twitter.com"> <img class="icon" src="images/twitter-icon.svg" alt="Twitter logo"></a>
+            <a class="social-link" rel="nofollow" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube-icon.svg" alt="YouTube logo"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="legal"> &copy; <span id="copyrightyear"></span> | Jaron Jensen | Wyoming | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="highlight">Date: <span id="date"></span></p>
+        <iframe src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400" height="150" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </footer>
+</body>
+</html>

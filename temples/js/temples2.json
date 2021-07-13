@@ -1,0 +1,70 @@
+[
+    {
+        "name":"Star Valley Wyoming Temple",
+        "phone":"307-886-6820",
+        "address1":"885 S Washington St",
+        "city":"Afton",
+        "state":"WY",
+        "zip":83110,
+        "imageurl":"https://assets.ldscdn.org/bb/73/bb73a17111468137800f8546adfa02a9af016b3b/star_valley_wyoming_temple_mountains_exterior.jpeg",
+        "services":[
+            "No clothing rental available"," No cafeteria available"," No patron housing available"," Distribution center nearby"
+        ],
+        "closures":[
+            "Monday, 27 September 2021 - Monday, 11 October 2021", " Wednesday, 24 November 2021 - Thursday, 25 November 2021", 
+            " Friday, 24 December 2021 - Saturday, 25 December 2021", " Friday, 31 December 2021"
+        ]
+    },
+
+    {
+        "name":"Rexburg Idaho Temple",
+        "phone":"208-656-0880",
+        "address1":"750 S 2nd E",
+        "city":"Rexburg",
+        "state":"ID",
+        "zip":83440,
+        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
+        "services":[
+            "Clothing rental available"," No cafeteria available"," No patron housing available"," Distribution center nearby"
+        ],
+        "closures":[
+            "Friday, 23 July 2021 (Limited Operations)", " Saturday, 24 July 2021", " Monday, 30 August 2021 - Monday, 6 September 2021",
+            " Saturday, 2 October 2021", " Wednesday, 24 November 2021 - Thursday, 25 November 2021", " Friday, 24 December 2021 - Saturday, 25 December 2021",
+            " Friday, 31 December 2021 - Saturday, 1 January 2022"
+        ]
+    } ,  
+
+    {
+        "name":"Brigham City Utah Temple",
+        "phone":"435-695-2170",
+        "address1":"250 S Main St",
+        "city":"Brigham City",
+        "state":"UT",
+        "zip":84302,
+        "imageurl":"https://assets.ldscdn.org/a6/c3/a6c3d8404575da1e33a62af45077b79c3d90372f/brigham_city_utah_temple_dawn.jpeg",
+        "services":[
+            "No clothing rental available"," No cafeteria available"," No patron housing available"," Distribution center nearby"
+        ],
+        "closures":[
+            "Saturday, 24 July 2021", " Monday, 9 August 2021 - Monday, 4 October 2021", " Wednesday, 24 November 2021 (Limited Operations)",
+            " Thursday, 25 November 2021", " Friday, 24 December 2021", " Saturday, 25 December 2021", " Friday, 31 December 2021 (Limited Operations)"
+        ]
+    },
+
+    {
+        "name":"Logan Utah Temple",
+        "phone":"435-752-3611",
+        "address1":"175 N 300 E",
+        "city":"Logan",
+        "state":"UT",
+        "zip":84321,
+        "imageurl":"https://assets.ldscdn.org/64/ce/64ce029cb2372528f8e3ea9f2b980873f38d5d92/logan_temple_lds.jpeg",
+        "services":[
+            "Clothing rental available"," No cafeteria available"," No patron housing available"," No distribution center nearby"
+        ],
+        "closures":[
+            "Saturday, 24 July 2021", " Saturday, 2 October 2021", " Monday, 4 October 2021 - Monday, 18 October 2021", " Wednesday, 24 November 2021 (Limited Operations)",
+            " Thursday, 25 November 2021", " Friday, 24 December 2021", " Saturday, 25 December 2021", " Friday, 31 December 2021 (Limited Operations)"
+        ]
+    } 
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple's Inn & Suites</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/navresponse.js"></script>
+    <script src="js/time.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- <img id='templeLogo' src="images/templeLogo.png" alt="Temple Logo"> -->
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a class= 'active' href="#">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form method='GET' action="#">
+
+            <label for="location">Location:
+                <input type="text" list='temples' name='location' placeholder='Select Location' required>
+                <datalist id='temples'>
+                    <option value="Star Valley Wyoming"></option>
+                    <option value="Rexburg Idaho"></option>
+                    <option value="Brigham City Utah"></option>
+                    <option value="Logan City Utah"></option>
+                </datalist>
+            </label>
+
+            <label for="staydate">Reservation Date:
+                <input type="date" name="staydate" min="2020-01-01" max="2100-01-01">
+            </label>
+          
+            <label for="roomtype">Room Type:
+                <input type="text" list='rooms' name='roomtype' placeholder='Select Room Type' required>
+                <datalist id='rooms'>
+                    <option value="Celestial"></option>
+                    <option value="Terrestial"></option>
+                    <option value="Telestial"></option>
+                    <option value="Earth"></option>
+                </datalist>
+            </label>
+
+            <label for="roomnum">Number of Rooms:
+                <input type="number" name='roomnum' placeholder="#1, 2, 3..." required>
+            </label>
+
+            <label for="firstname">First Name:
+                <input type="text" name="firstname" placeholder="First Name" required>
+            </label>
+
+            <label for="lastname">Last Name:
+                <input type="text" name="lastname" placeholder="Last Name" required>
+            </label>
+
+            <label for="email">Email:
+                <input type="email" name='email' placeholder="Email" required>
+            </label>
+
+            <label for="phone">Phone Number:
+                <input type="tel" name='phone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(###)-###-####">
+            </label>
+
+            <label for="homestate">Home State or Country:
+                <input type="text" name='homestate' placeholder="Home State/Country">
+            </label>
+
+            <label for="accomidations">Special Accomidations: 
+                <textarea name="accomidations" id="accomidations" cols="30" rows="4" placeholder="How can we help?"></textarea>
+            </label>
+        </form>
+    </main>
+</body>
+
+<footer>
+    <p class="legal">Jaron Jensen | Wyoming | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+    <p class="highlight">Date: <span id="date"></span></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028516!2d-77.0977204849073!3d38.983255949484104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1626139379753!5m2!1sen!2sus" width="450" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></footer>
+</html>

@@ -1,0 +1,26 @@
+main{
+    margin: 0 auto;
+    background-color: lightgray;
+    max-width: 800px;
+    padding: 1em;
+    
+}
+
+ img{
+     max-width: 100%;
+ }
+#temples{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.temple{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: yellow;
+    text-align: center;
+    padding: 15px;
+}

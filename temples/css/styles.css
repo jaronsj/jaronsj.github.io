@@ -26,13 +26,6 @@ header{
     text-align: center;
     padding: 1em;
 }
-
-footer{
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #FFD400;
-}
-    
 nav{
     margin: 0 auto;
     max-width: 360px;
@@ -71,13 +64,159 @@ nav{
 #navigation.responsive li{
     display: block;
 }
+#homeMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 1em;
+    gap: 20px;
+}
+#purpose{
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 1em;
+    line-height: 25px;
+    background-color: #6CD4FF;
+    text-align: center;
+}
+#templeHigh{
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 1em;
+    line-height: 25px;
+    background-color: #6CD4FF;
+    text-align: center;
+}
+#purpose h3{
+    text-decoration: underline;
+}
+#templeHigh h3{
+    text-decoration: underline;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: start;
+    background-color: #6CD4FF;
+    padding: 20px;
+    max-width: 100%;
+    border: solid;
+    border-radius: 25px;
+    line-height: 25px;
+}
+form input{
+    width: 175px;
+}
+form textarea{
+    width: 175px;
+}
+button{
+    line-height: 30px;
+}
+button:hover{
+    background-color: #C7FFDA;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #FFD400;
+    padding: 5px;
+}
+#servicesMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 1em;
+    gap: 20px;
+}
+#receptMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 1em;
+    gap: 20px;
+}
+#fullMissMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 1em;
+    gap: 20px;
+}
+#amenities{
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 1em;
+    line-height: 25px;
+    background-color: #6CD4FF;
+}
+#amenities h3{
+    text-align: center;
+    text-decoration: underline;
+}
+#services{
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 1em;
+    line-height: 25px;
+    background-color: #6CD4FF;
+}
+#services h3{
+    text-align: center;
+    text-decoration: underline;
+}
+#recpt{
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 1em;
+    line-height: 25px;
+    background-color: #6CD4FF;
+}
+#recpt h3{
+    text-align: center;
+    text-decoration: underline;
+}
+#fullMiss{
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 1em;
+    line-height: 25px;
+    background-color: #6CD4FF;
+}
+#fullMiss h3{
+    text-align: center;
+    text-decoration: underline;
+}
+#contactMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 1em;
+}
+#contactSect{
+    border: solid 2px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #6CD4FF;
+}
+#contactSect h3{
+    text-decoration: underline;
+}
+iframe{
+    max-width: 100%;
+}
 
  img{
-     max-width: 100%;
+    max-width: 100%;
+    border: solid 2px;
+    border-radius: 50px;
  }
 #temples{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1em;
     padding: 1em;
 }
@@ -85,12 +224,26 @@ nav{
 .temple{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #FFD400;
+    background-color: #6CD4FF;
+    border: solid 1px;
+    border-radius: 25px;
     text-align: center;
     padding: 15px;
 }
+#buttonSect{
+    background-color: lightgray; 
+    text-align: center;
+    padding-bottom: 15px;
+}
+#homeButton{
+    grid-column: 1/2;
+    width: 300px;
+}
 
 @media only screen and (min-width: 34.5em) {
+    header{
+        height: 75px;
+    }
     nav{
         max-width: 100%;
     }
@@ -106,22 +259,64 @@ nav{
     #navigation li:first-child {
         display: none;
     }
+    #temples{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #homeMain{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3em;
+    }
+    #templeHigh img{
+        max-width: 50%;
+    }
+    #servicesMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3em;
+    }
+    #recpt{
+        margin: 0 auto;
+        width: 600px;
+    }
+    #fullMiss{
+        margin: 0 auto;
+        width: 600px;
+    }
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
-        padding: 15px;
-        height: 175px;
+        padding: 20px;
+        height: 150px;
     }
     .highlight{
         text-align: start;
     }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        max-width: 600px;
+        margin: 0  auto;
+    }
+    form label{
+        max-height: 100%;
+    }
+    form input{
+        width: 250px;
+    }
+    form textarea{
+        width: 250px;
+    }
+    #contactSect{
+        margin: 0 auto;
+        max-width: 70%;
+    }
 }
 
 @media only screen and (min-width: 54.5em){
-    header{
-        height: 100px;
-    }
     #navigation{
         width: 100%;
         margin: 0 auto;
